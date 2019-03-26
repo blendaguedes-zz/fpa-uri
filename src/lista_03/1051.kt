@@ -36,6 +36,6 @@ fun main(args: Array<String>) {
             faixa3 = (faixa3 * 28) / 100
             imposto = faixa1 + faixa2 + faixa3
         }
-        System.out.printf("R$ %.2f\n", imposto)
+        println("R$ ${"%.2f".format(imposto)}")
     }
 }

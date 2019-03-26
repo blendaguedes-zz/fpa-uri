@@ -17,7 +17,7 @@ fun main(args: Array<String>) {
 
     val novoSalario = salario * (1 + reajuste/100.0)
 
-    System.out.printf("Novo salario: %.2f\n", novoSalario)
-    System.out.printf("Reajuste ganho: %.2f\n", salario * reajuste/100.0)
+    println("Novo salario: ${"%.2f".format(novoSalario)}")
+    println("Reajuste ganho: ${"%.2f".format(salario * reajuste/100.0)}")
     println("Em percentual: $reajuste %")
 }

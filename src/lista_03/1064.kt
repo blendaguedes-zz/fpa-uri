@@ -16,5 +16,5 @@ fun main(args: Array<String>) {
         }
     }
     println("$positivos valores positivos")
-    System.out.printf("%.1f\n", soma/positivos)
+    println("%.1f".format(soma/positivos))
 }
