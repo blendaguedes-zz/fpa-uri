@@ -14,7 +14,7 @@ fun main(args: Array<String>) {
     for (i in 0..99) {
         if (list[i]!! <= 10.0) {
             val item = list[i]
-            System.out.printf("A[$i] = %.1f\n", item)
+            println("A[$i] = ${"%.1f".format(item)}")
         }
     }
 }
