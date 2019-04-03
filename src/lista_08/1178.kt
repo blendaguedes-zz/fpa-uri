@@ -15,6 +15,6 @@ fun main(args: Array<String>) {
     }
 
     for (j in 0..99){
-        System.out.printf("N[%d] = %.4f\n", j, list[j])
+        println("N[$j] = ${"%.4f".format(list[j])}")
     }
 }

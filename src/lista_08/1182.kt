@@ -3,7 +3,7 @@ package lista_08
 import java.util.Scanner
 
 fun main(args: Array<String>) {
-    val matrix = array2dOfdouble(12, 12)
+    val matrix = Array(12) { DoubleArray(12) }
 
     val input = Scanner(System.`in`)
 
@@ -17,10 +17,7 @@ fun main(args: Array<String>) {
     }
 
     when (operacao) {
-        "S" -> System.out.printf("%.1f\n", matrix[linha].sum())
-        "M" -> System.out.printf("%.1f\n", matrix[linha].average())
+        "S" -> println("%.1f".format(matrix[linha].sum()))
+        "M" -> println("%.1f".format(matrix[linha].average()))
     }
 }
-
-private fun array2dOfdouble(sizeOuter: Int, sizeInner: Int): Array<DoubleArray>
-        = Array(sizeOuter) { DoubleArray(sizeInner) }

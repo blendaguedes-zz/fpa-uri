@@ -12,6 +12,6 @@ fun main(args: Array<String>) {
         list[i] = input.nextInt()
     }
 
-    println("Menor valor: "+list.min())
-    println("Posicao: "+list.indexOf(list.min()!!))
+    println("Menor valor: ${list.min()}")
+    println("Posicao: ${list.indexOf(list.min()!!)}")
 }
